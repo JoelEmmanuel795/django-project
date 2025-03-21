@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [ 
+    'templatestest.apps.TemplatestestConfig',
     'dbtests.apps.DbtestsConfig',
     'myapp.apps.MyappConfig',
     'django.contrib.admin', 
@@ -39,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions', 
     'django.contrib.messages', 
     'django.contrib.staticfiles', 
-#    'demoapp', 
 ] 
 
 MIDDLEWARE = [
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'myproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

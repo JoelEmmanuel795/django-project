@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('myapp.urls')),
     path('', include('dbtests.urls')),
+    path('', include('templatestest.urls')),
 ]
 
 handler404 = 'myproject.views.handler404'
