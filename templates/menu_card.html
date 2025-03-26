@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %} Menu Card {% endblock %}
+{% block content %}
+
+{% if menu %}
+{% for item in menu %}
+<p>{{item.name}} : {{item.price}}</p>
+{% endfor %}
+{% else %}
+<p>No item to Display</p>
+{% endif %}
+
+{% endblock %}
